@@ -1,0 +1,19 @@
+label{
+    font-size: 30px;
+    display: block;
+}
+input{
+    height: 20px;
+    width: 14rem;
+}
+form{
+    height: 26rem;
+    width: 35rem;
+    /* border:  2px solid black; */
+    margin: 3px auto;
+}
+
+span{
+    color: red;
+    font-size: 25px;
+}
