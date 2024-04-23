@@ -25,10 +25,27 @@ let blogs=[
 app.get('/blogs',(req,res)=>{
     res.render('index',{blogs});
 })
-app.get('/blog/new',(req,res)=>{
-    console.log(req.body);
+app.get('/blogs/new',(req,res)=>{ 
     res.render('new');
 })
+app.post('/blogs',(req,res)=>{
+    console.log(req.body);
+    const {id ,tittle,url,desc}=req.body;
+    blogs=[{tittle,id,url,desc},...blogs];
+    console.log(blogs);
+    res.redirect('/blogs');
+})
+
+app.get('/edit',(req,res)=>{
+    res.send('this is a edit route');
+})
+app.get('/show',(req,res)=>{
+    res.send('this is a show route');
+})
+app.get('/delete',(req,res)=>{
+    res.send('this is a delete route');
+})
+
 
 app.listen(3000,()=>{
     console.log('server is runnig at port 3000');
