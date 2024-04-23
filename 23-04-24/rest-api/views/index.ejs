@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <% for( let blog of blogs) {%>
+            <div>
+                <img src="<%=blog.url%>" alt="nothing to display" srcset="">
+                <h1><%=blog.tittle%></h1>
+                <p><%=blog.desc%></p>
+            </div>
+
+            <%}  %>
+    </section>
+</body>
+</html>
+
+
+//ejs <%  %>  -->  js logic 
+        <%=  %>---> calculation
